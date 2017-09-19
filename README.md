@@ -6,12 +6,11 @@
  `sudo gedit /etc/grub.d/40_custom`<br />
  
  贴入以下内容：<br />
- `menuentry "Windows 7" {<br />
- set root=(hd0,1)<br />
- ntldr /bootmgr<br />
- boot<br />
- }<br />
- `
+ `menuentry "Windows 7" {`<br />
+ `set root=(hd0,1)`<br />
+ `ntldr /bootmgr`<br />
+ `boot`<br />
+ `}`<br />
  最后在终端输入：<br />
  `sudo update-grub`<br />
 
