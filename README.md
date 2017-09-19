@@ -15,3 +15,11 @@
  最后在终端输入：<br />
  `sudo update-grub`<br />
 
+## 如果win7系统偶尔花屏,但重启几次恢复
+打开ubuntu终端输入：<br />
+`sudo gedit /etc/default/grub`<br />
+
+* 取消注释 `GRUB_TERMINAL = console`<br />
+* 修改 `GRUB_CMDLINE_DEFAULT = "quiet splash"` 为 `GRUB_CMDLINE_DEFAULT = "quiet splash nomodest"`
+
+
